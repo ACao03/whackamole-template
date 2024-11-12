@@ -16,6 +16,8 @@ def main():
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     running = False
+                if event.type == pygame.MOUSEBUTTONDOWN:
+                    x, y = event.pos
             screen.fill("light green")
             pygame.display.flip()
             clock.tick(60)

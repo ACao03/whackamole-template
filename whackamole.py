@@ -10,6 +10,8 @@ def main():
         screen = pygame.display.set_mode((640, 512))
         clock = pygame.time.Clock()
         running = True
+        pygame.draw.line(screen, color, (x1,y1), (x2,y2))
+        screen.blit(mole_image, mole_image.get_rect(topleft=(x,y)))
         while running:
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
